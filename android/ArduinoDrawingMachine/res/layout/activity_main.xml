@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0px"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    android:paddingTop="0px"
+    tools:context=".MainActivity"
+     android:id="@+id/layout"
+     >
+
+    <LinearLayout
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    <Button
+            android:id="@+id/buttonPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:text="P" />
+        <Button
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/buttonLayer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="L1" />
+
+        <Button
+            android:id="@+id/buttonLayer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="L2" />
+
+        <Button
+            android:id="@+id/buttonLayer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="L3" />
+    </LinearLayout>
+
+</RelativeLayout>

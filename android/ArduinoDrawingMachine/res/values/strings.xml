@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ArduinoDrawingMachine</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_save_load">Save Load Clear</string>
+    <string name="title_activity_print">Print Settings</string>
+
+</resources>

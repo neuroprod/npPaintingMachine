@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000px"
+    android:layout_height="600px"
+    android:id="@+id/printView"
+    android:orientation="vertical"
+    android:paddingBottom="20px"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:paddingTop="20px"
+    tools:context=".PrintActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="100px" >
+
+        <TextView
+            android:id="@+id/debugtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="connect to arduino" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="400px" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="connect" />
+
+            <TextView
+                android:id="@+id/printStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="print status" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/printButton1"
+                    android:layout_width="236dp"
+                    android:layout_height="wrap_content"
+                    android:text="Print Layer 1" />
+
+                <Button
+                    android:id="@+id/printButton2"
+                    android:layout_width="236dp"
+                    android:layout_height="wrap_content"
+                    android:text="Print Layer 2" />
+
+                <Button
+                    android:id="@+id/printButton3"
+                    android:layout_width="236dp"
+                    android:layout_height="wrap_content"
+                    android:text="Print Layer 3" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/minPaintText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="min paint distance" />
+
+            <SeekBar
+                android:id="@+id/seekBarMinPaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="22dp"
+                android:max="10000" />
+
+            <TextView
+                android:id="@+id/maxPaintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="max Paint dist" />
+
+            <SeekBar
+                android:id="@+id/seekBarMaxPaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start position" />
+
+            <Button
+                android:id="@+id/buttonUp"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="↑" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/buttonLeft"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:text="←" />
+
+                <Button
+                    android:id="@+id/buttonRight"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:text="→" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonDown"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="↓" />
+
+            <Switch
+                android:id="@+id/switchStepSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step Size big" />
+
+            <TextView
+                android:id="@+id/textTestSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bar1" />
+
+            <SeekBar
+                android:id="@+id/barTestSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="22dp"
+                android:max="10000" />
+
+            <TextView
+                android:id="@+id/textViewUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="up value" />
+
+            <SeekBar
+                android:id="@+id/seekBarUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10000" />
+
+            <TextView
+                android:id="@+id/textViewDownMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="down min value" />
+
+            <SeekBar
+                android:id="@+id/seekBarDownMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10000" />
+
+            <TextView
+                android:id="@+id/textViewDownMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="down max value" />
+
+            <SeekBar
+                android:id="@+id/seekBarDownMax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10000" />
+            
+            
+             <TextView
+                android:id="@+id/textViewSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speedValue" />
+       <SeekBar
+                android:id="@+id/seekBarSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="2000"
+            />
+            
+     
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
